@@ -223,7 +223,7 @@ class InputManager {
 
     const pad = this.pollGamepad();
     let throttle = (held.fwd ? 1 : 0) - (held.back ? 1 : 0);
-    let steerTarget = (held.right ? 1 : 0) - (held.left ? 1 : 0);
+    let steerTarget = (held.left ? 1 : 0) - (held.right ? 1 : 0);
     let brake = held.brake ? 1 : 0;
     let boost = held.boost ? 1 : 0;
     let handbrake = held.handbrake ? 1 : 0;
